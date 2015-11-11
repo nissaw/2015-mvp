@@ -1,0 +1,7 @@
+{
+  "name": "ski-angular",
+  "author": "Nissa Wollum",
+  "dependencies": {
+    "angular": "1.4.7"
+  }
+}
