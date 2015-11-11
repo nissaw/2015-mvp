@@ -4,7 +4,14 @@
   <title>MVP</title>
 </head>
 <body>
-
+  <div class="navigation">
+    <ul>
+      <li><a href="#/reports" class="reports">REPORTS</a></li>
+      <li><a href="#/add_obs" class="add">ADD OBS</a></li>
+    </ul>
+  </div>
+  
+  <div ng-view="app"></div>
 
   <h1>{{ hello }}</h1>
   <input type="text" ng-model="hello"/>
