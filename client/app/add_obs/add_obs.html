@@ -1,0 +1,29 @@
+<div id="add_obs">
+  
+  <h1>Add Your Opinion Here</h1>
+  <form name="add_obs_form">
+    
+    <label for="areaSelect">Area: </label>
+    <select name="area" id="areaSelect" ng-model="data.area">
+      <option ng-repeat="area in data.areas" value="{{ area.name }}">{{ option.name }}</option>
+
+     <!--  <option value="totw">Top of The World</option>
+      <option value="backside">Backside</option>
+      <option value="chair9">Chair 9</option>
+      <option value="chair3">Chair 3</option> -->
+    </select>
+    <br>
+
+    <label for="conditionSelect">Conditions: </label>
+    <select name="condition" id="conditionSelect" ng-model="data.condition">
+      <option ng-repeat="condition in data.condtions" value="{{ condition.id }}">{{ condition.description }}</option>
+    </select>
+
+  </form>
+
+</div>
+
+<!-- create: data.areas.name
+        data.areas.id
+        data.conditions.description
+        data.conditions.id -->
