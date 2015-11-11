@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="goskithere">
 <head>
   <title>MVP</title>
 </head>
@@ -11,13 +11,20 @@
     </ul>
   </div>
   
-  <div ng-view="app"></div>
+  <div ng-view="app">
+
 
   <h1>{{ hello }}</h1>
   <input type="text" ng-model="hello"/>
+  </div>
+
 
 
 <script type="text/javascript" src="../bower_components/angular/angular.js"></script>
+<script type="text/javascript" src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+
+<script type="text/javascript" src="app/add_obs/add_obs.js"></script>
+<script type="text/javascript" src="app/reports/reports.js"></script>
 <script type="text/javascript" src="app/app.js"></script>
 </body>
 </html>

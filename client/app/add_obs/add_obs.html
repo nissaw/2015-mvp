@@ -4,8 +4,8 @@
   <form name="add_obs_form">
     
     <label for="areaSelect">Area: </label>
-    <select name="area" id="areaSelect" ng-model="data.area">
-      <option ng-repeat="area in data.areas" value="{{ area.name }}">{{ option.name }}</option>
+    <select name="area" id="areaSelect" ng-model="obsData.areas">
+      <option ng-repeat="area in obsData.areas" value="{{ area.name }}">{{ area.name }}</option>
 
      <!--  <option value="totw">Top of The World</option>
       <option value="backside">Backside</option>
@@ -15,8 +15,8 @@
     <br>
 
     <label for="conditionSelect">Conditions: </label>
-    <select name="condition" id="conditionSelect" ng-model="data.condition">
-      <option ng-repeat="condition in data.condtions" value="{{ condition.id }}">{{ condition.description }}</option>
+    <select name="condition" id="conditionSelect" ng-model="obsData.conditions">
+      <option ng-repeat="condition in obsData.condtions" value="{{ condition.id }}">{{ condition.description }}</option>
     </select>
 
   </form>
