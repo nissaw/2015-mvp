@@ -1,12 +1,11 @@
 angular.module('goskithere', [
   'ui.router',
-  // 'ngRoute',
   'gst.add_obs',
   'gst.reports',
   ])
 
 .config(function ($stateProvider, $urlRouterProvider){
-  $urlRouterProvider.otherwise('/');
+  $urlRouterProvider.otherwise('/reports');
 
   $stateProvider
     .state('add_obs', {  
@@ -14,8 +13,14 @@ angular.module('goskithere', [
       templateUrl: 'app/add_obs/add_obs.html',
       controller: 'AddController'
     })
-    .state('/reports', {
-      url: 'app/reports/reports.html',
+    .state('reports', {
+      url: '/reports',
+      templateUrl: 'app/reports/reports.html',
       controller: 'ReportsController'
+    })
+    .state('conditions', {
+      url: '/conditions',
+      templateUrl: 'app/conditions/conditions.html',
+      controller: 'AddController'
     })
 })

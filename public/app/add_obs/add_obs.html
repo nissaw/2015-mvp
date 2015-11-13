@@ -1,8 +1,27 @@
-<div id="add_obs">
-  
-  <h1>Add Your Opinion Here</h1>
 
-  <h2>{{ obsData.areas }}</h2>
+<div id="add_obs">
+  <div class="container-fluid">
+    <div id="SelectHeader" class="row">
+      <div class="col-md-12">
+        <h1>Select Area</h1>
+      </div>
+    </div> 
+
+    <div id="gallery">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <button ng-repeat="area in obsData.areas" type="button" value="{{ area.name }}" class="btn btn-primary col-md-12"><a ng-href="#/conditions">{{ area.name }}</a></button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+<!--   
+<div id="form">
+  <h2>{{ obsData.areas[0].name }}</h2>
   <form name="add_obs_form">    
     <label for="areaSelect">Area: </label>
     <select name="area" id="areaSelect" ng-model="obsData.areas">
@@ -13,12 +32,13 @@
 
     <label for="conditionSelect">Conditions: </label>
     <select name="condition" id="conditionSelect" ng-model="obsData.conditions">
-      <option ng-repeat="condition in obsData.condtions" value="{{ condition.id }}">{{ condition.description }}</option>
+      <option ng-repeat="condition in obsData.conditions" value="{{ condition }}">{{ condition }}</option>
     </select>
 
-  </form>
+  </form> -->
 
-</div>
+
+<!-- </div> -->
 
 <!-- create: data.areas.name
         data.areas.id

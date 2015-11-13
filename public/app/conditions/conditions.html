@@ -1,0 +1,22 @@
+<div id="conditions">
+  
+  <h1>CHAIR 9</h1>
+  
+ <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <button ng-repeat="condition in obsData.conditions" type="button" value="{{ condition }}" class="btn btn-primary col-md-12"><a ng-href="#/reports">{{ condition }}</a></button>
+      </div>
+    </div>
+
+<div id="custom">
+  <form name="add_obs_form" ng-submit="addOb(condition)">
+    <label for="custom">Add Your Custom Description Here!</label><br>
+    <input type="text" placeholder="OVERHEAD!!!" ng-model="condition"></input>
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+</div>
+
+</div>
