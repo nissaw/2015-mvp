@@ -14,6 +14,7 @@ angular.module('gst.add_obs', [])
 
   $scope.addOb = function(condition){
     $scope.obsData.conditions.push(condition);
+    
     // $location.path('/reports');
     }
 
